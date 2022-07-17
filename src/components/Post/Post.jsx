@@ -1,12 +1,12 @@
 import React from "react";
 import { Wrapper } from "./Post.styles";
 
-export const Post = () => {
+export const Post = ({ title, content }) => {
     return (
         <Wrapper>
-            <h2>Título</h2>
+            <h2>{title}</h2>
 
-            <span>Content Test</span>
+            <span>{content}</span>
         </Wrapper>
     )
 }

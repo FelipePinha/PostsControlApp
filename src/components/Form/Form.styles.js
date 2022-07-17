@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     width: 600px;
     min-width: 300px;
-    height: 200px;
 
     margin-top: 30px;
 
@@ -30,6 +29,9 @@ export const Wrapper = styled.div`
 
         padding: 10px;
         font-size: 16px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     button {
