@@ -7,4 +7,9 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h1 {
+        color: #eee;
+        margin-top: 30px;
+    }
 `
