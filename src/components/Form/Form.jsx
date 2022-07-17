@@ -15,8 +15,6 @@ export const Form = () => {
             }]
 
             setPosts(newPosts)
-            setTitle('')
-            setContent('')
         }
 
        
