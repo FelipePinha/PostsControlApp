@@ -6,7 +6,7 @@ export const Post = () => {
         <Wrapper>
             <h2>Título</h2>
 
-            <span>O campeão tem nome e se chama charles oliveira</span>
+            <span>Content Test</span>
         </Wrapper>
     )
 }
