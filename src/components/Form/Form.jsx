@@ -5,7 +5,7 @@ export const Form = () => {
     return (
         <Wrapper>
             <input type="text" placeholder="Título"/>
-            <input type="text" placeholder="O que está pensando?"/>
+            <textarea type="text" placeholder="O que está pensando?"></textarea>
 
             <button>Enviar</button>
         </Wrapper>

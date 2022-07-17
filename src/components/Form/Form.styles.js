@@ -5,10 +5,12 @@ export const Wrapper = styled.div`
     min-width: 300px;
     height: 200px;
 
+    margin-top: 30px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
 
     input[type='text'] {
         width: 100%;
@@ -18,6 +20,15 @@ export const Wrapper = styled.div`
         border-radius: 7px;
         border-color: #fff;
         outline: none;
+        font-size: 16px;
+    }
+
+    textarea{
+        width: 100%;
+        min-width: 300px;
+        height: 80px;
+
+        padding: 10px;
         font-size: 16px;
     }
 
