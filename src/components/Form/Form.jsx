@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import { Wrapper } from "./Form.styles";
 import { Post } from "../Post/Post";
+import { useSelector, useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
+import { createPost, selectPosts } from "../../../reducers/features/postSlice";
 
 export const Form = () => {
+    const dispatch = useDispatch()
+    const posts = useSelector(selectPosts)
+
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
-    const [posts, setPosts] = useState([])
 
-    const handleAddPost = () => {
-        if(title && content) {
-            const newPosts = [...posts, {
-                title: title,
-                content: content
-            }]
-
-            setPosts(newPosts)
+    function handleAddPost() {
+        if (title && content) {
+            dispatch(createPost(
+                {
+                    id: nanoid(),
+                    title: title,
+                    content: content
+                }
+            ))
         }
-
-       
     }
 
     return (
@@ -40,7 +44,7 @@ export const Form = () => {
             <h1>Posts</h1>
             {
                 posts.map(post => (
-                    <Post title={post.title} content={post.content}/>
+                    <Post key={post.id} title={post.title} content={post.content}/>
                 ))
             }
         </Wrapper>
