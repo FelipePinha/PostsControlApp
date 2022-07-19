@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+    position: relative;
     width: 100%;
     min-width: 300px;
     height: 150px;
@@ -21,5 +22,21 @@ export const Wrapper = styled.div`
 
     h2 {
         letter-spacing: 2px;
+    }
+
+    .deleteBtn {
+        color: lightcoral;
+        font-weight: bold;
+        font-size: 20px;
+        
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        cursor: pointer;
+    }
+
+    .deleteBtn:hover {
+        text-decoration: underline;
     }
 `
